@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.button_link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+  .button_link {
+    font-size: 16px;
+  }
+  .button_link .button {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width: 390px) {
+  .button_link {
+    font-size: 14px;
+  }
+}
+.button_link .button {
+  margin-top: 60px;
+  background-color: #336699;
+  border-radius: 14px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+}
+@media screen and (max-width: 758px) {
+  .button_link .button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=BtnPrimary.module.css.map */

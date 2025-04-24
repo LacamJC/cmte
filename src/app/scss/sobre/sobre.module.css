@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.sobre {
+  display: flex;
+  margin-bottom: 100px;
+  min-height: 80vh;
+}
+@media screen and (min-width: 920px) {
+  .sobre {
+    padding: 0px 120px;
+  }
+}
+@media screen and (min-width: 920px) and (max-width: 768px) {
+  .sobre {
+    padding: 0px 60px;
+  }
+}
+@media screen and (min-width: 920px) and (max-width: 468px) {
+  .sobre {
+    padding: 0px 15px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .sobre {
+    margin-top: 100px;
+  }
+}
+.sobre .sobre_left {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 920px) {
+  .sobre .sobre_left {
+    padding: 0px 20px;
+  }
+}
+.sobre .sobre_left .content {
+  width: 100%;
+}
+.sobre .sobre_right {
+  width: 40%;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sobre .sobre_right img {
+  max-width: 100%;
+  max-height: 600px;
+}
+
+@media screen and (max-width: 920px) {
+  .sobre {
+    display: flex;
+    flex-direction: column;
+  }
+  .sobre .sobre_left {
+    width: 100%;
+  }
+  .sobre .sobre_right {
+    margin-top: 60px;
+    width: 100%;
+    padding: 0px;
+  }
+}/*# sourceMappingURL=sobre.module.css.map */

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+}
+$cor1: #696969;
+$cor2: #808080;
+$cor3: #336699;
+
+@mixin container {
+    @media screen and (max-width: 768px) {
+        padding: 0px 60px;
+    }
+    @media screen and (max-width: 468px) {
+        padding: 0px 15px;
+    }
+    padding: 0px 120px;
+}

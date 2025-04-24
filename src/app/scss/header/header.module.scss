@@ -1,0 +1,79 @@
+.header {
+    // background-color: rgba(255, 192, 203, 0.228);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.276);
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    // margin: 0px 120px;
+
+    @media screen and (max-width: 768px) {
+        padding: 0px 60px;
+    }
+    @media screen and (max-width: 468px) {
+        padding: 0px 15px;
+    }
+    padding: 0px 120px;
+    
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        overflow-x: hidden;
+        // background-color: yellow;
+        .logo {
+            width: 300px; /* Largura inicial da logo */
+            height: 100px; /* Altura inicial da logo */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            @media (max-width: 768px) {
+                width: 200px; /* Largura menor em telas menores */
+                height: auto; /* Ajusta a altura proporcionalmente */
+            }
+
+            @media (max-width: 480px) {
+                width: 150px; /* Largura ainda menor em telas menores */
+                height: auto;
+            }
+
+            .logo_image {
+                display: block; /* Evita espaçamento extra */
+                max-width: 100%; /* Garante que a imagem não ultrapasse a largura do pai */
+                height: auto; /* Mantém a proporção da imagem */
+                /* Remove as declarações fixas de largura e altura para permitir a responsividade */
+                /* width: 60%; */
+                /* height: 60%; */
+            }
+        }
+        .checkbox {
+            // padding: 5px;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .checkbox:checked ~ .sideBar {
+            transform: translateX(0%);
+            // display: block;
+        }
+        .sideBar {
+            background-color: blue;
+            position: absolute;
+            // display: none;
+            right: 0;
+            height: 40vh;
+            transition: 0.5s ease all;
+            transform: translateX(100%);
+            width: 300px;
+        }
+    }
+}

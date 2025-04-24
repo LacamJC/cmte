@@ -1,0 +1,37 @@
+@import '../variables';
+
+.button_link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+    @media screen and (max-width: 1200px)
+    {
+        font-size: 16px;
+        .button{
+            width: 90%;
+        }
+        @media screen and (max-width: 390px){
+            font-size: 14px;
+        }
+    }
+    .button {
+        margin-top: 60px;
+        background-color: $cor3;
+        border-radius: 14px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        @media screen and (max-width: 758px)
+        {
+            width: 100%;
+        }
+        
+        // padding: 0px 10px;
+        text-align: center;
+        margin: auto;
+    }
+}
