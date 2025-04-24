@@ -1,4 +1,5 @@
 import Header from "../components/Header"
+import Eventos from "./pages/Eventos"
 import Sobre from "./pages/Sobre"
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <Header />
             <Sobre />
+            <Eventos />
         </>
     )
 }

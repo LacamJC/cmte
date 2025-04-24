@@ -5,9 +5,7 @@
 
 .container {
   padding: 0px 120px !important;
-  height: 100px !important;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.351);
+  min-height: 80vh;
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -18,4 +16,10 @@
   .container {
     padding: 0px 15px !important;
   }
-}/*# sourceMappingURL=header.module.css.map */
+}
+.container h1 {
+  text-align: center;
+}
+.container .containerCaroussel {
+  height: 800px;
+}/*# sourceMappingURL=eventos.module.css.map */

@@ -8,10 +8,10 @@ $cor3: #336699;
 
 @mixin container {
     @media screen and (max-width: 768px) {
-        padding: 0px 60px;
+        padding: 0px 60px !important; 
     }
     @media screen and (max-width: 468px) {
-        padding: 0px 15px;
+        padding: 0px 15px !important;
     }
-    padding: 0px 120px;
+    padding: 0px 120px !important;
 }

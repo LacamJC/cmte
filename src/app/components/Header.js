@@ -1,24 +1,46 @@
+import React from 'react';
 import styles from '../scss/header/header.module.css'
-import SideMenu from './SideMenu'
+import MenuItem from './SideMenu/MenuItem';
 import logo from '../../asset/img/loo_cmte.png'
-
-const Header = () => {
-
-    const handleClick = () => {
-        console.log('clicado')
+function Header() {
+  const menuItems = [
+    {
+      label: "Home",
+      url: "/"
+    },
+    {
+      label: "História",
+      url: "/historia"
     }
-
-    return(
-        <header className={`${styles.header}`}>
-            <div className={`${styles.content}`}>
-                <div className={`${styles.logo}`}>
-                    <img src={logo} className={`${styles.logo_image}`}/>
-                </div>
-                <input type="checkbox" className={`${styles.checkbox}`} onClick={handleClick} />
-                <SideMenu/>
+  ]
+    return (
+      <nav className={`navbar navbar-expand-lg  ${styles.container}`}>
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <img src={logo}/>
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              {menuItems.map((item) => (
+                <MenuItem label={item.label} url={item.url}/>
+              ))}
             </div>
-        </header>
-    )
-}
-
-export default Header
+          </div>
+        </div>
+      </nav>
+    );
+  }
+  
+  export default Header;
+  
